@@ -1,16 +1,34 @@
 import { Routes } from '@angular/router';
-import { ByCapitalPage } from './pages/by-capital-page/by-capital-page';
+import { CountryLayout } from './pages/layouts/country-layout/country-layout';
 import { ByCountryPage } from './pages/by-country-page/by-country-page';
+import { ByCapitalPage } from './pages/by-capital-page/by-capital-page';
+import { ByRegionPage } from './pages/by-region-page/by-region-page';
 
 export const countryRoutes: Routes = [
     {
         path: "",
-        component: ByCountryPage,
+        component: CountryLayout,
+        children: [
+            {
+                path: "by-country",
+                component: ByCountryPage,
+            },
+            {
+                path: "by-capital",
+                component: ByCapitalPage,
+            },
+            {
+                path: "by-region",
+                component: ByRegionPage,
+            },
+            {
+                path: "**",
+                redirectTo: "by-country",
+            }
+
+        ]
     },
-    {
-        path: "**",
-        redirectTo: "",
-    }
+
 ];
 
 export default countryRoutes
