@@ -2,7 +2,7 @@ import { Component, inject, signal } from '@angular/core';
 import { SearchInput } from "../../components/search-input/search-input";
 import { CountryList } from "../../components/country-list/country-list";
 import { CountryService } from '../../services/country.service';
-import { RESTCountriesInterface } from '../../interfaces/RESTCountries.interface';
+import { Country } from '../../interfaces/Country.interface';
 
 @Component({
   selector: 'app-by-country-page',
@@ -15,7 +15,7 @@ export class ByCountryPage {
 
   isLoading = signal<boolean>(false);
   isError = signal<string | null>(null);
-  countries = signal<RESTCountriesInterface[]>([])
+  countries = signal<Country[]>([])
 
   onSearch(query: string) {
 
