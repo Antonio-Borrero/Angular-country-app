@@ -17,7 +17,7 @@ export class CountryService {
     query = query.toLocaleLowerCase();
 
     return this.http.get<RESTCountriesInterface[]>(`${environment.RESTCountriesApiKey}/name/${query}`).pipe(
-      map(CountryMapper.mapRestCountriesArrayToCountryArray)
+      map((countries) => CountryMapper.mapRestCountriesArrayToCountryArray(countries))
     )
   }
 
