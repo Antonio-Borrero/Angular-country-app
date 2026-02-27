@@ -13,7 +13,7 @@ export class CountryService {
 
   private http = inject(HttpClient)
 
-  searchByCountry(query: string): Observable<Country[]>{
+  searchByCountry(query: string) {
     query = query.toLocaleLowerCase();
 
     return this.http.get<RESTCountriesInterface[]>(`${environment.RESTCountriesApiKey}/name/${query}`).pipe(
@@ -25,7 +25,7 @@ export class CountryService {
     )
   }
 
-  searchByCapital(query: string): Observable<Country[]>{
+  searchByCapital(query: string) {
     query = query.toLocaleLowerCase();
 
     return this.http.get<RESTCountriesInterface[]>(`${environment.RESTCountriesApiKey}/capital/${query}`).pipe(
@@ -37,11 +37,14 @@ export class CountryService {
     )
   }
 
-  searchByCode(query: string): Observable<Country>{
-    query = query.toLocaleLowerCase();
-
-    return this.http.get<RESTCountriesInterface>(`${environment.RESTCountriesApiKey}/capital/${query}`).pipe(
-      map(CountryMapper.mapRestCountriesToCountry)
+  searchByCode(code: string) {
+    return this.http.get<RESTCountriesInterface[]>(`${environment.RESTCountriesApiKey}/alpha/${code}`).pipe(
+      map((countries) => CountryMapper.mapRestCountriesArrayToCountryArray(countries)),
+      map((countries) => countries.at(0)),
+      catchError((error) => {
+        console.log(`Error fetching`, error)
+        return throwError(() => new Error(`No se pudo obtener países con: ${code}`))
+      })
     )
   }
 
