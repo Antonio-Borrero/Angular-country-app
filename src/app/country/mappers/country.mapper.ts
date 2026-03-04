@@ -7,7 +7,7 @@ export class CountryMapper {
             cca2: RestCountries.cca2,
             flag: RestCountries.flags.svg,
             name: RestCountries.translations["spa"].common ?? "No Spanish name",
-            capital: RestCountries.capital.join(","),
+            capital: RestCountries.capital?.join(","),
             population: RestCountries.population,
             region: RestCountries.region,
             subRegion: RestCountries.subregion,
