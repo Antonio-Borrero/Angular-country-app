@@ -7,7 +7,7 @@ English | [Español](README.es.md)
 [![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![daisyUI](https://img.shields.io/badge/daisyUI-FDE047?logo=daisyui&logoColor=black)](https://daisyui.com/)
 
-Learning project built with Angular that allows you to search countries by name, capital, or region, and view detailed information such as flag, population and capital city usind the REST Countires API.
+Learning project built with Angular that allows users to search countries by name, capital, or region, and view detailed information such as flag, population, and capital city using the REST Countries API.
 
 ## Technologies
 
@@ -21,7 +21,7 @@ Learning project built with Angular that allows you to search countries by name,
 
 1. Clone the repository:
    ```bash
-   https://github.com/Antonio-Borrero/Angular-country-app.git
+   git clone https://github.com/Antonio-Borrero/Angular-country-app.git
    ```
 
 2. Enter the project folder:
