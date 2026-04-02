@@ -21,12 +21,12 @@ Proyecto de aprendizaje construido con Angular que permite buscar países por no
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/Antonio-Borrero/Angular-country-app.git
+   git clone https://github.com/Antonio-Borrero/country-app-angular.git
    ```
 
 2. Entrar en la carpeta del proyecto:
    ```bash
-   cd Angular-country-app
+   cd country-app-angular
    ```
    
 3. IInstalar las dependencias:
