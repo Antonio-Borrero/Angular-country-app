@@ -54,9 +54,9 @@ Proyecto de aprendizaje construido con Angular que permite buscar países por no
 - Consumir APIs externas
 - Manejo de componentes, servicios y routing
 
-## Produccion
+## Producción
 
-To build the production version:
+Para generar la versión de producción:
 
 ```bash
 ng build
