@@ -21,7 +21,7 @@ Learning project built with Angular that allows users to search countries by nam
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/Antonio-Borrero/Angular-country-app.git](https://github.com/Antonio-Borrero/country-app-angular.git)
+   git clone https://github.com/Antonio-Borrero/country-app-angular.git
    ```
 
 2. Enter the project folder:
