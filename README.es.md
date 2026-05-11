@@ -11,7 +11,7 @@ Español | [English](README.md)
 
 <br>
 
-Este es un **proyecto de aprendizaje y práctica** construido con **Angular 21** que permite a los usuarios explorar información sobre países de todo el mundo. El proyecto se centra en el consumo de APIs, enrutamiento (rutas hijas, parámetros) y persistencia de estado.
+Este es un **proyecto de aprendizaje y práctica** construido con Angular como parte del **curso de Angular de DevTalles (Fernando Herrera)** que permite a los usuarios explorar información sobre países de todo el mundo. El proyecto se centra en el consumo de APIs, enrutamiento (rutas hijas, parámetros) y persistencia de estado.
 
 <br>
 
