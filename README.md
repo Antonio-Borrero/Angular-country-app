@@ -36,14 +36,19 @@ This is a **learning and practice project** built with **Angular 21** that allow
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/Antonio-Borrero/country-app-angular.git
    ```
+
 2. Install dependencies:
+
    ```bash
    npm install
    ```
+
 3. Run development server:
+
    ```
    ng serve
    ```
