@@ -11,7 +11,7 @@ English | [Español](README.es.md)
 
 <br>
 
-This is a **learning and practice project** built with **Angular 21** that allows users to explore information about countries worldwide. This project focuses on API consumption, routing (child routes, parameters), and state persistence.
+This is a **learning and practice project** built with Angular as part of the **DevTalles (Fernando Herrera) Angular course** that allows users to explore information about countries worldwide. This project focuses on API consumption, routing (child routes, parameters), and state persistence.
 
 <br>
 
