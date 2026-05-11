@@ -1,59 +1,89 @@
+English | [Español](README.es.md)
+
 # CountryApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+[![Angular](https://img.shields.io/badge/-Angular-DD0031?logo=angular&logoColor=white)](https://angular.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![daisyUI](https://img.shields.io/badge/daisyUI-FDE047?logo=daisyui&logoColor=black)](https://daisyui.com/)
 
-## Development server
+![Country App Preview](assets/preview.png)
 
-To start a local development server, run:
+<br>
+
+This is a **learning and practice project** built with **Angular 21** that allows users to explore information about countries worldwide. This project focuses on API consumption, routing (child routes, parameters), and state persistence.
+
+<br>
+
+## Technical Highlights
+
+- **Dynamic Search Engine:** Search countries by **Name, Capital, or Region** using the REST Countries API.
+- **Routing:** Implementation of **Child Routes** and **Route Parameters** to display detailed country information.
+- **State Persistence:** Search results and active tabs persist even after page reloads, ensuring a seamless navigation experience.
+- **Reactive Search:** Optimized data fetching with specialized services to manage HTTP requests and error handling.
+
+<br>
+
+## Tech Stack
+
+- **Angular 21**
+- **TypeScript**
+- **Tailwind CSS** & **DaisyUI**
+- **REST Countries API**
+
+<br>
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Antonio-Borrero/country-app-angular.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run development server:
+   ```
+   ng serve
+   ```
+
+   - Go to `http://localhost:4200/`.
+   - The app will automatically reload when any file is modified
+
+<br>
+
+## Project structure
 
 ```bash
-ng serve
+    src/app/
+    ├── country/
+    │   ├── components/      # UI components (Country tables, search inputs, etc.)
+    │   ├── interfaces/      # Type definitions for the REST Countries API
+    │   ├── mappers/         # Data transformation logic (API to internal models)
+    │   ├── pages/           # Main views and Routing Layouts
+    │   │   ├── ...          # Specific search pages (Capital, Country, Region)
+    │   │   └── layouts/     # Master layouts for the country module
+    │   ├── services/        # Business logic and HTTP requests
+    │   └── shared/          # Global UI elements (Footer, Home, 404)
+    └── environments/        # Environment-specific configurations
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+<br>
 
-## Code scaffolding
+## Learning outcomes
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Mastering Angular Router (parameters, redirection, and active links).
+- Implementing search debouncing and persistence logic.
+- Working with complex TypeScript interfaces from external APIs.
+- Creating reusable UI components like customized tables and search bars.
 
-```bash
-ng generate component component-name
-```
+<br>
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Build
 
-```bash
-ng generate --help
-```
+To build the production version:
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+    ```bash
+    ng build
+    ```
